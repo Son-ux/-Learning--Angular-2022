@@ -1,3 +1,4 @@
+import { Product } from './common/Product';
 import { Component } from '@angular/core';
 
 @Component({
@@ -6,5 +7,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'hello-angular';
+  product : Product = {
+    name: "hat",
+    quantity: 200,
+    price: 500
+  }
 }
